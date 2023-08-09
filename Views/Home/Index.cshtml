@@ -3,6 +3,10 @@
 }
 
 <style>
+    .fade{
+       transition:  opacity 0.2s ease; 
+    }
+    
     .alert {
         position: absolute;
         top: 10%;
@@ -25,7 +29,7 @@
 </div>
 
 <!-- The Modal -->
-<div class="modal" id="myModal">
+<div class="modal fade" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <!-- Modal Header -->
@@ -65,11 +69,12 @@
             </div>
         </div>
     </div>
+    <div id="successPopup" class="alert alert-success" style="display: none;">
+        Dates saved successfully!
+    </div>
 </div>
 
-<div id="successPopup" class="alert alert-success" style="display: none;">
-    Dates saved successfully!
-</div>
+
 
 <!-- Include Bootstrap and jQuery JavaScript libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -119,8 +124,17 @@
         
             // Close the success popup after 3 seconds
             setTimeout(function () {
-                $('#successPopup').fadeOut();
+                $('#successPopup').fadeOut(function () {
+                    // Clear the success popup display property
+                    $(this).css('display', '');
+                });
             }, 3000);
         });
+        
+        // Modal show event
+            $('#myModal').on('show.bs.modal', function () {
+                // Clear the success popup display property
+                $('#successPopup').css('display', '');
+            });
     });
 </script>
