@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj": {}
+    "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Date\\Date.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj": {
+    "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Date\\Date.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
+        "projectUniqueName": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Date\\Date.csproj",
         "projectName": "Date",
-        "projectPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
-        "packagesPath": "C:\\Users\\Jamela M. Alicando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\obj\\",
+        "projectPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Date\\Date.csproj",
+        "packagesPath": "C:\\Users\\alexa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexa\\OneDrive\\Documents\\GitHub\\Date\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jamela M. Alicando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
