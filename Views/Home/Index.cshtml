@@ -1,0 +1,86 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <!-- Button to trigger the modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Select Dates</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <!-- Date Start and Date End input fields -->
+                <label for="dateStart">Date Start:</label>
+                <input type="datetime-local" id="dateStart" class="form-control" required>
+
+                <label for="dateEnd">Date End:</label>
+                <input type="datetime-local" id="dateEnd" class="form-control" required>
+            </div>
+            <!-- Modal Footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Include Bootstrap and jQuery JavaScript libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+@*
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            const dateStartInput = document.getElementById('dateStart');
+            const dateEndInput = document.getElementById('dateEnd');
+
+            const now = new Date();
+            console.log(now);
+            const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+
+            dateStartInput.value = now.toISOString().slice(0, 16);
+            dateEndInput.value = tomorrow.toISOString().slice(0, 16);
+        });
+    });
+</script>
+*@
+
+<script>
+    $(document).ready(function () {
+        $('#myModal').on('shown.bs.modal', function () {
+            const dateStartInput = document.getElementById('dateStart');
+            const dateEndInput = document.getElementById('dateEnd');
+
+            const now = new Date();
+            const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+
+            // Get local time zone offset in minutes
+            const timeZoneOffset = now.getTimezoneOffset();
+
+            // Adjust the time zone offset
+            now.setMinutes(now.getMinutes() - timeZoneOffset);
+            tomorrow.setMinutes(tomorrow.getMinutes() - timeZoneOffset);
+
+            // Format dates in yyyy-MM-ddThh:mm format
+            const formattedNow = now.toISOString().slice(0, 16);
+            const formattedTomorrow = tomorrow.toISOString().slice(0, 16);
+
+            dateStartInput.value = formattedNow;
+            dateEndInput.value = formattedTomorrow;
+        });
+    });
+</script>
+
+
