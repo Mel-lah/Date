@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BSCS 3\\Date\\Date.csproj": {}
+    "C:\\Users\\Asus\\Desktop\\Date\\Date.csproj": {}
   },
   "projects": {
-    "D:\\BSCS 3\\Date\\Date.csproj": {
+    "C:\\Users\\Asus\\Desktop\\Date\\Date.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BSCS 3\\Date\\Date.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\Date\\Date.csproj",
         "projectName": "Date",
-        "projectPath": "D:\\BSCS 3\\Date\\Date.csproj",
+        "projectPath": "C:\\Users\\Asus\\Desktop\\Date\\Date.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\BSCS 3\\Date\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Desktop\\Date\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

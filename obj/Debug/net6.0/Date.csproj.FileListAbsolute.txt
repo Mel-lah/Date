@@ -147,3 +147,34 @@ D:\BSCS 3\Date\obj\Debug\net6.0\scopedcss\projectbundle\Date.bundle.scp.css
 D:\BSCS 3\Date\obj\Debug\net6.0\Date.dll
 D:\BSCS 3\Date\obj\Debug\net6.0\refint\Date.dll
 D:\BSCS 3\Date\obj\Debug\net6.0\Date.pdb
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\appsettings.json
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.staticwebassets.runtime.json
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.exe
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.deps.json
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.runtimeconfig.json
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.dll
+C:\Users\Asus\Desktop\Date\bin\Debug\net6.0\Date.pdb
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.csproj.AssemblyReference.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.AssemblyInfoInputs.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.AssemblyInfo.cs
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.csproj.CoreCompileInputs.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.RazorAssemblyInfo.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.RazorAssemblyInfo.cs
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets\msbuild.Date.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets\msbuild.build.Date.props
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Date.props
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Date.props
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\scopedcss\bundle\Date.styles.css
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\scopedcss\projectbundle\Date.bundle.scp.css
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.dll
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\refint\Date.dll
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.pdb
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\Date.genruntimeconfig.cache
+C:\Users\Asus\Desktop\Date\obj\Debug\net6.0\ref\Date.dll

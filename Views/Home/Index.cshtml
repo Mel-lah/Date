@@ -39,6 +39,7 @@
                     <!-- Date Start and Date End input fields using DateTimePicker -->
                     <div class="form-group">
                         <label for="dateStart">Date Start:</label>
+                        <div id="dateValidationMessage" class="text-danger"></div>
                         <div class="input-group date" id="datetimepickerStart" data-target-input="nearest">
                             <input type="text" class="form-control datetimepicker-input" data-target="#datetimepickerStart" id="dateStart" required />
                             <div class="input-group-append" data-target="#datetimepickerStart" data-toggle="datetimepicker">
@@ -48,7 +49,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="dateEnd">Date End:</label>
+                        <label for="dateEnd">Test Date End:</label>
+                        <div id="dateValidationMessage" class="text-danger"></div>
                         <div class="input-group date" id="datetimepickerEnd" data-target-input="nearest">
                             <input type="text" class="form-control datetimepicker-input" data-target="#datetimepickerEnd" id="dateEnd" required />
                             <div class="input-group-append" data-target="#datetimepickerEnd" data-toggle="datetimepicker">
@@ -76,6 +78,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 <script>
+    function calculateDateRange(start, end) {
+        const startDate = moment(start, 'MM/DD/YYYY hh:mm:ss A');
+        const endDate = moment(end, 'MM/DD/YYYY hh:mm:ss A');
+        const dateRange = [];
+
+        while (startDate.isSameOrBefore(endDate)) {
+            dateRange.push(startDate.format('MM/DD/YYYY'));
+            startDate.add(1, 'days');
+        }
+
+        return dateRange;
+    }
+
     $(document).ready(function () {
         // Calculate current date and time using Moment.js
         const now = moment();
@@ -103,12 +118,33 @@
         // Initialize date picker interaction
         $('#datetimepickerStart').on('change.datetimepicker', function (e) {
             $('#datetimepickerEnd').datetimepicker('minDate', e.date);
+
+            // Validate date range
+            validateDateRange();
+
+            // Call the function to highlight the date range
+            highlightDateRange();
+        });
+
+        $('#datetimepickerEnd').on('change.datetimepicker', function (e) {
+            $('#datetimepickerStart').datetimepicker('maxDate', e.date);
+
+            // Validate date range
+            validateDateRange();
+
+            // Call the function to highlight the date range
+            highlightDateRange();
         });
 
         // Save button click event
         $('#saveButton').click(function () {
             const startDate = $('#dateStart').val();
             const endDate = $('#dateEnd').val();
+
+            // Validate date range before saving
+            if (!validateDateRange()) {
+                return; // Abort saving if validation fails
+            }
         
             // Save the dates to local storage
             localStorage.setItem('startDate', startDate);
@@ -121,6 +157,43 @@
             setTimeout(function () {
                 $('#successPopup').fadeOut();
             }, 3000);
+
         });
+
+        /// Function to validate the date range
+        function validateDateRange() {
+            const startDate = moment($('#dateStart').val(), 'MM/DD/YYYY hh:mm:ss A');
+            const endDate = moment($('#dateEnd').val(), 'MM/DD/YYYY hh:mm:ss A');
+
+            if (endDate.isBefore(startDate)) {
+                // Display an error message
+                $('#dateValidationMessage').text('End date must not be earlier than start date');
+                return false; // Validation failed
+            } else {
+                // Clear the error message
+                $('#dateValidationMessage').text('');
+                return true; // Validation successful
+            }
+        }
+
+        function highlightDateRange() {
+            const startDate = $('#dateStart').val();
+            const endDate = $('#dateEnd').val();
+            const dateRange = calculateDateRange(startDate, endDate);
+
+            // Remove existing highlights
+            $('.day').removeClass('highlight');
+
+            // Add highlight class to cells in the date range
+            dateRange.forEach(date => {
+                const cellSelector = `[data-day="${date}"]`;
+                $(cellSelector).addClass('highlight');
+            });
+        }
     });
 </script>
+<style>
+    .day.highlight {
+        background-color: #007BFF;
+    }
+</style>
