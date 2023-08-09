@@ -2,9 +2,11 @@
     ViewData["Title"] = "Home Page";
 }
 
+
+
 <div class="m-5">
     <!-- Button to trigger the modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Set Start and End Date</button>
 </div>
 
 <!-- The Modal -->
@@ -18,12 +20,28 @@
             </div>
             <!-- Modal Body -->
             <div class="modal-body">
-                <!-- Date Start and Date End input fields -->
-                <label for="dateStart">Date Start:</label>
-                <input type="datetime-local" id="dateStart" class="form-control" required>
+                <div class="modal-body">
+                    <!-- Date Start and Date End input fields using DateTimePicker -->
+                    <div class="form-group">
+                        <label for="dateStart">Date Start:</label>
+                        <div class="input-group date" id="datetimepickerStart" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepickerStart" id="dateStart" required />
+                            <div class="input-group-append" data-target="#datetimepickerStart" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
 
-                <label for="dateEnd">Date End:</label>
-                <input type="datetime-local" id="dateEnd" class="form-control" required>
+                    <div class="form-group">
+                        <label for="dateEnd">Date End:</label>
+                        <div class="input-group date" id="datetimepickerEnd" data-target-input="nearest">
+                            <input type="text" class="form-control datetimepicker-input" data-target="#datetimepickerEnd" id="dateEnd" required />
+                            <div class="input-group-append" data-target="#datetimepickerEnd" data-toggle="datetimepicker">
+                                <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Modal Footer -->
             <div class="modal-footer">
@@ -37,48 +55,40 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-@*
 <script>
     $(document).ready(function () {
-        $('#myModal').on('shown.bs.modal', function () {
-            const dateStartInput = document.getElementById('dateStart');
-            const dateEndInput = document.getElementById('dateEnd');
+        // Calculate current date and time using Moment.js
+        const now = moment();
+        const tomorrow = moment().add(1, 'day');
 
-            const now = new Date();
-            console.log(now);
-            const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
+        // Format the dates for input values
+        const formattedNow = now.format('MM/DD/YYYY hh:mm:ss A');
+        const formattedTomorrow = tomorrow.format('MM/DD/YYYY hh:mm:ss A');
 
-            dateStartInput.value = now.toISOString().slice(0, 16);
-            dateEndInput.value = tomorrow.toISOString().slice(0, 16);
+        // Set default values for the input fields
+        $('#datetimepickerStart').datetimepicker({
+            format: 'MM/DD/YYYY hh:mm:ss A',
+            minDate: now // Set minDate to current date
         });
+
+        $('#datetimepickerEnd').datetimepicker({
+            format: 'MM/DD/YYYY hh:mm:ss A',
+            minDate: now // Set minDate to current date
+        });
+
+        // Set initial input field values
+        $('#dateStart').val(formattedNow);
+        $('#dateEnd').val(formattedTomorrow);
+
+        // Initialize date picker interaction
+        $('#datetimepickerStart').on('change.datetimepicker', function (e) {
+            $('#datetimepickerEnd').datetimepicker('minDate', e.date);
+        });
+
     });
 </script>
-*@
 
-<script>
-    $(document).ready(function () {
-        $('#myModal').on('shown.bs.modal', function () {
-            const dateStartInput = document.getElementById('dateStart');
-            const dateEndInput = document.getElementById('dateEnd');
 
-            const now = new Date();
-            const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
 
-            // Get local time zone offset in minutes
-            const timeZoneOffset = now.getTimezoneOffset();
-
-            // Adjust the time zone offset
-            now.setMinutes(now.getMinutes() - timeZoneOffset);
-            tomorrow.setMinutes(tomorrow.getMinutes() - timeZoneOffset);
-
-            // Format dates in yyyy-MM-ddThh:mm format
-            const formattedNow = now.toISOString().slice(0, 16);
-            const formattedTomorrow = tomorrow.toISOString().slice(0, 16);
-
-            dateStartInput.value = formattedNow;
-            dateEndInput.value = formattedTomorrow;
-        });
-    });
-</script>
 
 
