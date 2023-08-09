@@ -122,3 +122,28 @@ C:\Users\alexa\OneDrive\Documents\GitHub\Date\obj\Debug\net6.0\refint\Date.dll
 C:\Users\alexa\OneDrive\Documents\GitHub\Date\obj\Debug\net6.0\Date.pdb
 C:\Users\alexa\OneDrive\Documents\GitHub\Date\obj\Debug\net6.0\Date.genruntimeconfig.cache
 C:\Users\alexa\OneDrive\Documents\GitHub\Date\obj\Debug\net6.0\ref\Date.dll
+D:\BSCS 3\Date\bin\Debug\net6.0\appsettings.Development.json
+D:\BSCS 3\Date\bin\Debug\net6.0\appsettings.json
+D:\BSCS 3\Date\bin\Debug\net6.0\Date.staticwebassets.runtime.json
+D:\BSCS 3\Date\bin\Debug\net6.0\Date.exe
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.csproj.AssemblyReference.cache
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.GeneratedMSBuildEditorConfig.editorconfig
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.AssemblyInfoInputs.cache
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.AssemblyInfo.cs
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.csproj.CoreCompileInputs.cache
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.MvcApplicationPartsAssemblyInfo.cache
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.RazorAssemblyInfo.cache
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.RazorAssemblyInfo.cs
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets\msbuild.Date.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets\msbuild.build.Date.props
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Date.props
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Date.props
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets.pack.json
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets.build.json
+D:\BSCS 3\Date\obj\Debug\net6.0\staticwebassets.development.json
+D:\BSCS 3\Date\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\BSCS 3\Date\obj\Debug\net6.0\scopedcss\bundle\Date.styles.css
+D:\BSCS 3\Date\obj\Debug\net6.0\scopedcss\projectbundle\Date.bundle.scp.css
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.dll
+D:\BSCS 3\Date\obj\Debug\net6.0\refint\Date.dll
+D:\BSCS 3\Date\obj\Debug\net6.0\Date.pdb
