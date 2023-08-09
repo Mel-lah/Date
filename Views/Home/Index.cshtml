@@ -2,7 +2,22 @@
     ViewData["Title"] = "Home Page";
 }
 
-
+<style>
+    .alert {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9999;
+        display: none;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #dff0d8;
+        color: #3c763d;
+        font-weight: bold;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
 
 <div class="m-5">
     <!-- Button to trigger the modal -->
@@ -11,7 +26,7 @@
 
 <!-- The Modal -->
 <div class="modal" id="myModal">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <!-- Modal Header -->
             <div class="modal-header">
@@ -46,9 +61,14 @@
             <!-- Modal Footer -->
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="saveButton">Save</button>
             </div>
         </div>
     </div>
+</div>
+
+<div id="successPopup" class="alert alert-success" style="display: none;">
+    Dates saved successfully!
 </div>
 
 <!-- Include Bootstrap and jQuery JavaScript libraries -->
@@ -85,10 +105,22 @@
             $('#datetimepickerEnd').datetimepicker('minDate', e.date);
         });
 
+        // Save button click event
+        $('#saveButton').click(function () {
+            const startDate = $('#dateStart').val();
+            const endDate = $('#dateEnd').val();
+        
+            // Save the dates to local storage
+            localStorage.setItem('startDate', startDate);
+            localStorage.setItem('endDate', endDate);
+        
+            // Show the success popup
+            $('#successPopup').fadeIn();
+        
+            // Close the success popup after 3 seconds
+            setTimeout(function () {
+                $('#successPopup').fadeOut();
+            }, 3000);
+        });
     });
 </script>
-
-
-
-
-
