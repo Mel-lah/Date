@@ -37,24 +37,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-@*
-<script>
-    $(document).ready(function () {
-        $('#myModal').on('shown.bs.modal', function () {
-            const dateStartInput = document.getElementById('dateStart');
-            const dateEndInput = document.getElementById('dateEnd');
-
-            const now = new Date();
-            console.log(now);
-            const tomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000);
-
-            dateStartInput.value = now.toISOString().slice(0, 16);
-            dateEndInput.value = tomorrow.toISOString().slice(0, 16);
-        });
-    });
-</script>
-*@
-
 <script>
     $(document).ready(function () {
         $('#myModal').on('shown.bs.modal', function () {
@@ -77,8 +59,13 @@
 
             dateStartInput.value = formattedNow;
             dateEndInput.value = formattedTomorrow;
+
+            // Set min attribute to prevent selecting past dates
+            dateStartInput.min = formattedNow;
+            dateEndInput.min = formattedNow;
         });
     });
 </script>
+
 
 
