@@ -8,32 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Jamela M. Alicando\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/kuekuatsu/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
+      "projectUniqueName": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj",
       "projectName": "Date",
-      "projectPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
-      "packagesPath": "C:\\Users\\Jamela M. Alicando\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\obj\\",
+      "projectPath": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj",
+      "packagesPath": "/Users/kuekuatsu/.nuget/packages/",
+      "outputPath": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jamela M. Alicando\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/kuekuatsu/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/usr/local/share/dotnet/library-packs": {},
+        "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -70,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
       }
     }
   }
