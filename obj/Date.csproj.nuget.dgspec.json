@@ -1,27 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj": {}
+    "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj": {}
   },
   "projects": {
-    "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj": {
+    "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj",
+        "projectUniqueName": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
         "projectName": "Date",
-        "projectPath": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/Date.csproj",
-        "packagesPath": "/Users/kuekuatsu/.nuget/packages/",
-        "outputPath": "/Users/kuekuatsu/Documents/OJT/OJT Traning/JAE Hub/datepicker/Date/obj/",
+        "projectPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\Date.csproj",
+        "packagesPath": "C:\\Users\\Jamela M. Alicando\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jamela M. Alicando\\source\\repos\\Date\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/kuekuatsu/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\Jamela M. Alicando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
-          "/usr/local/share/dotnet/sdk/7.0.306/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -58,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
